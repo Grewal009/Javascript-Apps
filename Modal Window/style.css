@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btnContainer {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1;
+}
+.modalContainer {
+  width: 450px;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  z-index: 10;
+}
+.modalContainerMain {
+  display: flex;
+  justify-content: space-between;
+}
+.close {
+  cursor: pointer;
+}
+p {
+  text-align: justify;
+}
+.hidden {
+  display: none;
+}
+.show-modal {
+  padding: 5px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(197, 243, 243);
+  opacity: 0.8;
+}
