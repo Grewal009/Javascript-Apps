@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 700px;
+  height: 500px;
+
+  margin: auto;
+  display: flex;
+  z-index: 1;
+  border-radius: 20px;
+}
+.container2 {
+  width: 700px;
+  height: 500px;
+
+  margin: auto;
+  z-index: 5;
+  position: absolute;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+}
+.player-1 {
+  width: 50%;
+  background-color: rgb(245, 202, 232);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.player-2 {
+  width: 50%;
+  background-color: rgb(246, 149, 215);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.player-1-board {
+  padding: 10px;
+  width: 150px;
+  background-color: rgb(238, 29, 119);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: whitesmoke;
+}
+.player-2-board {
+  padding: 10px;
+  width: 150px;
+  background-color: rgb(238, 29, 119);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  color: whitesmoke;
+}
+h3 {
+  margin-top: 75px;
+}
+.newGame {
+  margin-top: -50px;
+}
+.roll-hold {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.roll-dice {
+  margin-bottom: 15px;
+}
+.btn {
+  background-color: whitesmoke;
+  color: rgb(20, 19, 19);
+  padding: 5px 20px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 20px;
+  width: fit-content;
+}
