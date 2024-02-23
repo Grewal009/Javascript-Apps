@@ -69,7 +69,7 @@ h3 {
   margin-top: 75px;
 }
 .newGame {
-  margin-top: -50px;
+  margin-top: 0px;
 }
 .roll-hold {
   margin-top: 150px;
@@ -78,7 +78,7 @@ h3 {
   align-items: center;
 }
 .roll-dice {
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 .btn {
   background-color: whitesmoke;
@@ -88,4 +88,16 @@ h3 {
   border-radius: 20px;
   font-size: 20px;
   width: fit-content;
+}
+.dice {
+  width: 70px;
+  border-radius: 20px;
+}
+.dice-container {
+  width: 70px;
+  height: 70px;
+  /* border: 1px solid green; */
+}
+.hidden {
+  display: none;
 }
