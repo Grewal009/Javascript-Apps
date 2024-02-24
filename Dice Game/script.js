@@ -74,6 +74,7 @@ function disableButtons() {
   rollDiceBtn.classList.add("disabled");
   holdBtn.disabled = true;
   holdBtn.classList.add("disabled");
+  diceEle.classList.add("hidden");
 }
 
 rollDiceBtn.addEventListener("click", function () {
@@ -140,4 +141,21 @@ holdBtn.addEventListener("click", function () {
   }
 
   switchPlayer();
+});
+
+newGameBtn.addEventListener("click", function () {
+  playerOneScore = 0;
+  playerTwoScore = 0;
+  playerOnePoints = 0;
+  playerTwoPoints = 0;
+  activePlayer = "one";
+  playing = true;
+  playerOne.classList.remove("winner");
+  playerTwo.classList.remove("winner");
+  playerOneText.textContent = "PLAYER 1";
+  playerTwoText.textContent = "PLAYER 2";
+  player1Scores.textContent = 0;
+  player2Scores.textContent = 0;
+  rollDiceBtn.disabled = false;
+  holdBtn.disabled = false;
 });
