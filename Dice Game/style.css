@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 .container {
   width: 700px;
@@ -45,6 +46,9 @@
 }
 .activePlayer {
   background-color: rgb(250, 213, 239);
+}
+.winner {
+  background-color: rgb(167, 225, 136);
 }
 
 .player-1-board {
@@ -94,6 +98,7 @@ h3 {
   width: fit-content;
   cursor: pointer;
   user-select: none;
+  border: none;
 }
 .btn:hover {
   background-color: rgb(246, 226, 226);
@@ -109,4 +114,7 @@ h3 {
 }
 .hidden {
   display: none;
+}
+.disabled {
+  cursor: not-allowed;
 }
