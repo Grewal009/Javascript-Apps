@@ -30,7 +30,7 @@ function generateView() {
     <div class="player-1 activePlayer">
       <h3 class="playerOneText">PLAYER 1</h3>
       <span class="player-1-score">0</span>
-      <div class="player-1-board">
+      <div class="player-board">
         <span>CURRENT</span>
         <span class="player-1-points">0</span>
       </div>
@@ -39,7 +39,7 @@ function generateView() {
     <div class="player-2">
       <h3 class="playerTwoText">PLAYER 2</h3>
       <span class="player-2-score">0</span>
-      <div class="player-2-board">
+      <div class="player-board">
         <span>CURRENT</span>
         <span class="player-2-points">0</span>
       </div>
@@ -152,10 +152,14 @@ newGameBtn.addEventListener("click", function () {
   playing = true;
   playerOne.classList.remove("winner");
   playerTwo.classList.remove("winner");
+  playerOne.classList.add("activePlayer");
+  playerTwo.classList.remove("activePlayer");
   playerOneText.textContent = "PLAYER 1";
   playerTwoText.textContent = "PLAYER 2";
   player1Scores.textContent = 0;
   player2Scores.textContent = 0;
   rollDiceBtn.disabled = false;
   holdBtn.disabled = false;
+  rollDiceBtn.classList.remove("disabled");
+  holdBtn.classList.remove("disabled");
 });

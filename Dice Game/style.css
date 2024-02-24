@@ -3,12 +3,20 @@
   padding: 0;
   user-select: none;
 }
+body {
+  background-image: linear-gradient(45deg, #6f277e, #b91c21);
+}
+#root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container {
   width: 700px;
   height: 500px;
-
-  margin: auto;
   display: flex;
+
   z-index: 1;
   border-radius: 20px;
 }
@@ -51,30 +59,23 @@
   background-color: rgb(167, 225, 136);
 }
 
-.player-1-board {
+.player-board {
   padding: 10px;
-  width: 150px;
+  width: 180px;
   background-color: rgb(238, 29, 119);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  color: whitesmoke;
+  color: rgb(232, 219, 219);
+  font-size: 20px;
 }
-.player-2-board {
-  padding: 10px;
-  width: 150px;
-  background-color: rgb(238, 29, 119);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  color: whitesmoke;
-}
+
 h3 {
-  margin-top: 75px;
+  margin-top: 100px;
+
+  font-size: 25px;
 }
 .newGame {
   margin-top: 0px;
@@ -103,6 +104,10 @@ h3 {
 .btn:hover {
   background-color: rgb(246, 226, 226);
 }
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px gray;
+}
 .dice {
   width: 70px;
   border-radius: 20px;
@@ -117,4 +122,13 @@ h3 {
 }
 .disabled {
   cursor: not-allowed;
+}
+.player-1-score,
+.player-2-score {
+  font-size: 60px;
+  margin: 10px 0 50px 0;
+}
+.player-1-points,
+.player-2-points {
+  font-size: 35px;
 }
